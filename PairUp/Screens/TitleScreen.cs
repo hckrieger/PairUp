@@ -18,6 +18,7 @@ namespace PairUp.Screens
 		ScreenManager screenManager;
 		DisplayManager displayManager;
 		private ContentManager Content;
+
 		public TitleScreen(InputManager inputManager, ScreenManager screenManager, DisplayManager displayManager, ContentManager content)
 		{
 
@@ -28,9 +29,9 @@ namespace PairUp.Screens
 		}
 		public override void Initialize()
 		{
-			titleFont = new BitmapFont("Pair Up", "letters", new Vector2(displayManager.InternalResolution.X/2, displayManager.InternalResolution.Y/2 - 25), Color.Orange, Alignment.Center, 3);
+			titleFont = new BitmapFont("Pair Up", new Vector2(displayManager.InternalResolution.X/2, displayManager.InternalResolution.Y/2 - 25), Color.Orange, Alignment.Center, 3);
 
-			startFont = new BitmapFont("Start Game", "letters", new Vector2(displayManager.InternalResolution.X/2, 100), Color.Orange, Alignment.Center);
+			startFont = new BitmapFont("Start Game", new Vector2(displayManager.InternalResolution.X/2, 100), Color.Orange, Alignment.Center);
 			
 			
 

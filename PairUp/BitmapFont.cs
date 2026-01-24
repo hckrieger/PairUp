@@ -9,9 +9,12 @@ using System.Threading.Tasks;
 namespace PairUp
 {
 	public enum Alignment { Left, Center, Right };
+	
+	
 	public class BitmapFont
 	{
-		public BitmapFont(string text, string filePath, Vector2 rawPosition, Color color, Alignment alignment = Alignment.Left, int scale = 1, bool visible = true)
+		
+		public BitmapFont(string text, Vector2 rawPosition, Color color, Alignment alignment = Alignment.Left, int scale = 1, string filePath = null)
 		{
 			
 			Position = rawPosition;
@@ -19,9 +22,21 @@ namespace PairUp
 			this.text = text;
 			FilePath = filePath;
 			Scale = scale;
-			Visible = visible;
+			Visible = true;
 			textAlignment = alignment;
 			SetTextAlignment();
+		}
+
+		//A lighter weight initializer for buttons in which the button class sets the position in which this font is anchored to
+		public BitmapFont(string text, Color color, int scale = 1, string filePath = null)
+		{
+			this.text = text;
+			Color = color;
+			Scale = scale;
+			textAlignment = Alignment.Center;
+			Visible = true;
+			SetTextAlignment();
+			
 		}
 
 		private Alignment textAlignment;
@@ -52,7 +67,14 @@ namespace PairUp
 		}
 
 		private string renderedText;
-		public string FilePath;
+
+		private string filePath;
+
+		public string FilePath
+		{
+			get => filePath ?? DefaultFilePath;
+			set => filePath = value;
+		}
 
 		private Vector2 position;
 
@@ -67,6 +89,8 @@ namespace PairUp
 		public Color Color;
 		public int Scale;
 		public bool Visible;
+
+		public static string DefaultFilePath { get; set; } = "letters";
 
 		private int LongestHorizontalLine(out string[] lines)
 		{

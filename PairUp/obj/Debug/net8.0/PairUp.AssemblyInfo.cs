@@ -14,11 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PairUp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-<<<<<<< HEAD
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58539c8010af72bc94bf88126614065ba7eedb5a")]
-=======
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9361dca06976409747d9b6f4d48d21a8bb58d307")]
->>>>>>> 58539c8010af72bc94bf88126614065ba7eedb5a
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9f73b966480f19ffd2756a3ee3921ad725033b60")]
 [assembly: System.Reflection.AssemblyProductAttribute("PairUp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PairUp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

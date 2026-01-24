@@ -76,6 +76,11 @@ namespace PairUp.Services
 		{
 			return rectangle.Contains(MousePosition);
 		}
+		
+		public bool IsMousePressedOver(Rectangle rectangle)
+		{
+			return rectangle.Contains(MousePosition) & IsMouseButtonPressed(); 
+		}
 
 		public bool IsButtonDown(Buttons button)
 		{

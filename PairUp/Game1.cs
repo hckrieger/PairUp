@@ -39,6 +39,7 @@ namespace PairUp
 		protected override void Initialize()
 		{
 			// TODO: Add your initialization logic here
+			_spriteBatch = new SpriteBatch(GraphicsDevice);
 
 			displayManager = new DisplayManager(_graphics);
 			inputManager = new InputManager(displayManager);
@@ -56,6 +57,7 @@ namespace PairUp
 
 			base.Initialize();
 		}
+
 
 
 
@@ -103,17 +105,6 @@ namespace PairUp
 
 			base.Draw(gameTime);
 		}
-
-
-
-
-
-
-
-
-
-
-
 
 
 	}

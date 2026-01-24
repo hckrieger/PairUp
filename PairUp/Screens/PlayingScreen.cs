@@ -81,7 +81,7 @@ namespace PairUp.Screens
 
 		private InputManager inputManager;
 
-
+		private Button readyButton;
 
 
 		private Color[] matchColors =
@@ -115,7 +115,7 @@ namespace PairUp.Screens
 
 		private int unmatchedPairs;
 		int score;
-		private BitmapFont scoreFont, status, levelDisplay, buttonText;
+		private BitmapFont scoreFont, status, levelDisplay, readyFont;
 
 		private ContentManager Content;
 		public PlayingScreen(GraphicsDevice graphicsDevice, InputManager inputManager, Difficulty difficulty, ContentManager content)
@@ -131,13 +131,16 @@ namespace PairUp.Screens
 		{
 			base.Initialize();
 
-			scoreFont = new BitmapFont("Score:\n\n0", "letters", new Vector2(228, 10), Color.White);
+			scoreFont = new BitmapFont("Score:\n\n0", new Vector2(228, 10), Color.White);
 
-			status = new BitmapFont("Heads up", "letters", new Vector2(228, 64), Color.White, Alignment.Left, 1, false);
+			status = new BitmapFont("Heads up", new Vector2(228, 64), Color.White);
+			status.Visible = false;
 
-			levelDisplay = new BitmapFont($"Level: {(int)CurrentDifficulty + 1}/5", "letters", new Vector2(228,48), Color.White);
+			levelDisplay = new BitmapFont($"Level: {(int)CurrentDifficulty + 1}/5", new Vector2(228,48), Color.White);
 
-			buttonText = new BitmapFont($"Ready", "letters", new Vector2(0, 0), Color.White);
+
+			readyButton = new Button(new BitmapFont($"Ready", Color.White), graphicsDevice, new Vector2(230, 112), Color.Gray, 8);
+			readyButton.Visible = false;
 
 			button = Utils.RectangleTexture(56, 16, Color.Gray, graphicsDevice);
 			//CurrentDifficulty = Difficulty.Extreme;
@@ -255,11 +258,12 @@ namespace PairUp.Screens
 
 		public override void Update(GameTime gameTime)
 		{
-			
+
 			if (selectedCards.Count < 2)
 			{
 
-				GridLoop((x, y) => {
+				GridLoop((x, y) =>
+				{
 
 					if (inputManager.IsMouseOver(CardGrid[x, y].Rectangle) && inputManager.IsMouseButtonPressed() && !CardGrid[x, y].IsFlipped)
 					{
@@ -296,9 +300,9 @@ namespace PairUp.Screens
 						});
 					}
 					tries++;
-					
 
-					score += (75 * ((int)CurrentDifficulty+1)) * (unmatchedPairs - Math.Clamp(intermediateTries, 0, unmatchedPairs - 1));
+
+					score += (75 * ((int)CurrentDifficulty + 1)) * (unmatchedPairs - Math.Clamp(intermediateTries, 0, unmatchedPairs - 1));
 
 					intermediateTries = 0;
 					unmatchedPairs--;
@@ -354,16 +358,18 @@ namespace PairUp.Screens
 			if (currentGameState == GameState.GameEnded)
 			{
 				status.Visible = true;
+				readyButton.Visible = true;
 
 				if (CurrentDifficulty == Difficulty.Extreme)
-					status.Text = "You Win!\n\nPlay again?\nPress Space";
+					status.Text = "You Win!\n\nPlay again?";
 				else
-					status.Text = "You passed\nthis stage!\n\nReady for\nthe next?\nPress Space";
+					status.Text = "You passed\nthis stage!\n\nReady for\nthe next?";
 				
-				if (inputManager.IsKeyPressed(Keys.Space))
+				if (inputManager.IsMousePressedOver(readyButton.Rectangle))
 				{
 					currentGameState = GameState.Playing;
 
+					readyButton.Visible = false;
 					
 
 					tries = 0;
@@ -388,6 +394,7 @@ namespace PairUp.Screens
 				}
 			}
 
+
 		}
 
 
@@ -402,7 +409,7 @@ namespace PairUp.Screens
 			scoreFont.Draw(Content.Load<Texture2D>, spriteBatch);
 			status.Draw(Content.Load<Texture2D>, spriteBatch);
 			levelDisplay.Draw(Content.Load<Texture2D>, spriteBatch);
-
+			readyButton.Draw(spriteBatch, Content.Load<Texture2D>);
 
 		}
 
