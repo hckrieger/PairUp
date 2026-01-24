@@ -50,7 +50,7 @@ namespace PairUp
 
 
 
-			screenManager.AddScreen(TITLE_SCREEN, new TitleScreen(inputManager, screenManager, displayManager, Content));
+			screenManager.AddScreen(TITLE_SCREEN, new TitleScreen(GraphicsDevice, inputManager, screenManager, displayManager, Content));
 			screenManager.SwitchScreen(TITLE_SCREEN);
 
 			screenManager.AddScreen(PLAYING_SCREEN, new PlayingScreen(GraphicsDevice, inputManager, Difficulty.Easy, Content));

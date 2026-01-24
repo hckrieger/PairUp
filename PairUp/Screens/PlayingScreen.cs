@@ -139,10 +139,16 @@ namespace PairUp.Screens
 			levelDisplay = new BitmapFont($"Level: {(int)CurrentDifficulty + 1}/5", new Vector2(228,48), Color.White);
 
 
-			readyButton = new Button(new BitmapFont($"Ready", Color.White), graphicsDevice, new Vector2(230, 112), Color.Gray, 8);
+			readyButton = new Button(
+				new BitmapFont($"Ready", Color.White, Alignment.Left), 
+				graphicsDevice, 
+				new Vector2(230, 112),
+				Color.Blue, 
+				8);
+
 			readyButton.Visible = false;
 
-			button = Utils.RectangleTexture(56, 16, Color.Gray, graphicsDevice);
+			//button = Utils.RectangleTexture(56, 16, Color.Gray, graphicsDevice);
 			//CurrentDifficulty = Difficulty.Extreme;
 		}
 
@@ -365,19 +371,18 @@ namespace PairUp.Screens
 				else
 					status.Text = "You passed\nthis stage!\n\nReady for\nthe next?";
 				
-				if (inputManager.IsMousePressedOver(readyButton.Rectangle))
+
+				readyButton.ButtonPress(inputManager, () =>
 				{
 					currentGameState = GameState.Playing;
 
 					readyButton.Visible = false;
-					
+
 
 					tries = 0;
 					//fontManager.GetFont("score").Text = $"Tries: {tries}";
 					status.Visible = false;
 
-
-						
 
 					CurrentDifficulty = (CurrentDifficulty != Difficulty.Extreme) ? CurrentDifficulty + 1 : Difficulty.Easy;
 					if (CurrentDifficulty == Difficulty.Easy)
@@ -387,17 +392,15 @@ namespace PairUp.Screens
 					}
 					levelDisplay.Text = $"Level: {(int)CurrentDifficulty + 1}/5";
 
-					
+
 
 					SetCardGrid();
+				});
 
-				}
 			}
 
 
 		}
-
-
 
 
 		public override void Draw(SpriteBatch spriteBatch)

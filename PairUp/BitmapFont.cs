@@ -28,12 +28,12 @@ namespace PairUp
 		}
 
 		//A lighter weight initializer for buttons in which the button class sets the position in which this font is anchored to
-		public BitmapFont(string text, Color color, int scale = 1, string filePath = null)
+		public BitmapFont(string text, Color color, Alignment textAlignment = Alignment.Left, int scale = 1, string filePath = null)
 		{
 			this.text = text;
 			Color = color;
 			Scale = scale;
-			textAlignment = Alignment.Center;
+			this.textAlignment = textAlignment;
 			Visible = true;
 			SetTextAlignment();
 			
