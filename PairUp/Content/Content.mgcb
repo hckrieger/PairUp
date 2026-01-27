@@ -37,3 +37,9 @@
 /processorParam:TextureFormat=Color
 /build:letters.png
 
+#begin MatchSound.wav
+/importer:WavImporter
+/processor:SoundEffectProcessor
+/processorParam:Quality=Best
+/build:MatchSound.wav
+

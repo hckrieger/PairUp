@@ -12,15 +12,17 @@ using System.Threading.Tasks;
 
 namespace PairUp.Screens
 {
-	public class TitleScreen(GraphicsDevice graphicsDevice, InputManager inputManager, ScreenManager screenManager, DisplayManager displayManager, ContentManager content) : Screen
+	public class TitleScreen(GraphicsDevice graphicsDevice, InputManager inputManager, ScreenManager screenManager, DisplayManager displayManager, ContentManager content, Action exit) : Screen
 	{
 		BitmapFont titleFont, startFont, optionsFont;
 		InputManager inputManager = inputManager;
 		ScreenManager screenManager = screenManager;
 		DisplayManager displayManager = displayManager;
-		private Button startButton;
+		private TextButton startButton, exitButton;
 		private ContentManager Content = content;
 		private GraphicsDevice graphicsDevice = graphicsDevice;
+
+		private Action exit = exit;
 
 		public override void Initialize()
 		{
@@ -28,27 +30,34 @@ namespace PairUp.Screens
 
 			startFont = new BitmapFont("Start Game", Color.Orange, Alignment.Center);
 
-			startButton = new Button(
+			var xPos = displayManager.InternalResolution.X / 2;
+
+			startButton = new TextButton(
 				startFont,
 				graphicsDevice,
-				new Vector2(displayManager.InternalResolution.X / 2, 100),
+				new Vector2(xPos, 100),
 				margin: 4
 				);
 
-
+			exitButton = new TextButton(
+				new BitmapFont("Exit", Color.Orange, Alignment.Center),
+				graphicsDevice,
+				new Vector2(xPos, 124),
+				margin: 4
+				);
 			
-			
+		
 		}	
 
 		public override void Update(GameTime gameTime)
 		{
 
-				startButton.ButtonPress(inputManager, () =>
-				{
-					screenManager.SwitchScreen(Game1.PLAYING_SCREEN);
-				});
-		
+			startButton.ButtonPress(inputManager, () =>
+			{
+				screenManager.SwitchScreen(Game1.PLAYING_SCREEN);
+			});
 
+			exitButton.ButtonPress(inputManager, () => exit.Invoke());
 			
 		}
 
@@ -56,6 +65,7 @@ namespace PairUp.Screens
 		{
 			titleFont.Draw(Content.Load<Texture2D>, spriteBatch);
 			startButton.Draw(spriteBatch, Content.Load<Texture2D>);
+			exitButton.Draw(spriteBatch, Content.Load<Texture2D>);
 		}
 	}
 }

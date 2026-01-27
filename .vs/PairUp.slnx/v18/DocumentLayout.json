@@ -3,44 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\screens\\titlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\screens\\titlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\screens\\playingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\screens\\playingscreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\bitmapfont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\bitmapfont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\services\\screenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\services\\screenmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\game1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\services\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\services\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\extensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\utils.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\bitmapfont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\bitmapfont.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\datacache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\datacache.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|c:\\users\\hckri\\source\\repos\\monogame\\games\\pairup\\pairup\\screens\\titlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7DA78C23-0DD3-84E8-113A-4DD43C8C1190}|PairUp\\PairUp.csproj|solutionrelative:pairup\\screens\\titlescreen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,135 +30,71 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Button.cs",
-              "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Button.cs",
-              "RelativeDocumentMoniker": "PairUp\\Button.cs",
-              "ToolTip": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Button.cs",
-              "RelativeToolTip": "PairUp\\Button.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAwwBoAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T14:43:02.155Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Extensions.cs",
-              "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Extensions.cs",
-              "RelativeDocumentMoniker": "PairUp\\Extensions.cs",
-              "ToolTip": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Extensions.cs",
-              "RelativeToolTip": "PairUp\\Extensions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T13:56:04.265Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "ScreenManager.cs",
-              "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Services\\ScreenManager.cs",
-              "RelativeDocumentMoniker": "PairUp\\Services\\ScreenManager.cs",
-              "ToolTip": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Services\\ScreenManager.cs",
-              "RelativeToolTip": "PairUp\\Services\\ScreenManager.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBEAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T02:29:51.105Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BitmapFont.cs",
-              "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\BitmapFont.cs",
-              "RelativeDocumentMoniker": "PairUp\\BitmapFont.cs",
-              "ToolTip": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\BitmapFont.cs",
-              "RelativeToolTip": "PairUp\\BitmapFont.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAuwB4AAABWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-18T22:40:41.27Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "TitleScreen.cs",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Screens\\TitleScreen.cs",
               "RelativeDocumentMoniker": "PairUp\\Screens\\TitleScreen.cs",
               "ToolTip": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Screens\\TitleScreen.cs",
               "RelativeToolTip": "PairUp\\Screens\\TitleScreen.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwCsAAAADAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-10T04:40:20.269Z",
+              "WhenOpened": "2026-01-26T17:09:37.409Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "PlayingScreen.cs",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Screens\\PlayingScreen.cs",
               "RelativeDocumentMoniker": "PairUp\\Screens\\PlayingScreen.cs",
               "ToolTip": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Screens\\PlayingScreen.cs",
               "RelativeToolTip": "PairUp\\Screens\\PlayingScreen.cs",
-              "ViewState": "AgIAAH8AAAAAAAAAAAAIwI4AAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAOcAAAAAAAAAAAAiwGkBAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-10T16:04:38.688Z",
+              "WhenOpened": "2026-01-26T17:09:26.97Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Utils.cs",
-              "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Utils.cs",
-              "RelativeDocumentMoniker": "PairUp\\Utils.cs",
-              "ToolTip": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Utils.cs",
-              "RelativeToolTip": "PairUp\\Utils.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABgAAAADAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "BitmapFont.cs",
+              "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\BitmapFont.cs",
+              "RelativeDocumentMoniker": "PairUp\\BitmapFont.cs",
+              "ToolTip": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\BitmapFont.cs",
+              "RelativeToolTip": "PairUp\\BitmapFont.cs",
+              "ViewState": "AgIAAIAAAAAAAAAAAAAswGcAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-23T22:02:45.636Z"
+              "WhenOpened": "2026-01-26T02:53:35.693Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 3,
               "Title": "DataCache.cs",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\DataCache.cs",
               "RelativeDocumentMoniker": "PairUp\\DataCache.cs",
               "ToolTip": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\DataCache.cs",
               "RelativeToolTip": "PairUp\\DataCache.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDEAAAAEAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-14T02:11:16.946Z"
+              "WhenOpened": "2026-01-26T02:53:30.739Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "Game1.cs",
               "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Game1.cs",
               "RelativeDocumentMoniker": "PairUp\\Game1.cs",
               "ToolTip": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Game1.cs",
               "RelativeToolTip": "PairUp\\Game1.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAQwC0AAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAADkAAAAAAAAAAAAmwDQAAACDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-10T04:38:31.333Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "InputManager.cs",
-              "DocumentMoniker": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Services\\InputManager.cs",
-              "RelativeDocumentMoniker": "PairUp\\Services\\InputManager.cs",
-              "ToolTip": "C:\\Users\\hckri\\source\\repos\\MonoGame\\games\\PairUp\\PairUp\\Services\\InputManager.cs",
-              "RelativeToolTip": "PairUp\\Services\\InputManager.cs",
-              "ViewState": "AgIAACUAAAAAAAAAAAA1wFEAAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-10T04:37:59.134Z",
               "EditorCaption": ""
             }
           ]

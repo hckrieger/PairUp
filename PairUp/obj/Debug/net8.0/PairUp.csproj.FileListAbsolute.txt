@@ -106,3 +106,4 @@ C:\Users\hckri\source\repos\MonoGame\games\PairUp\PairUp\obj\Debug\net8.0\refint
 C:\Users\hckri\source\repos\MonoGame\games\PairUp\PairUp\obj\Debug\net8.0\PairUp.pdb
 C:\Users\hckri\source\repos\MonoGame\games\PairUp\PairUp\obj\Debug\net8.0\PairUp.genruntimeconfig.cache
 C:\Users\hckri\source\repos\MonoGame\games\PairUp\PairUp\obj\Debug\net8.0\ref\PairUp.dll
+C:\Users\hckri\source\repos\MonoGame\games\PairUp\PairUp\bin\Debug\net8.0\Content\MatchSound.xnb

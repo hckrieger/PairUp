@@ -33,7 +33,7 @@ namespace PairUp
 			Content.RootDirectory = "Content";
 			IsMouseVisible = false;
 
-
+		
 		}
 
 		protected override void Initialize()
@@ -50,7 +50,7 @@ namespace PairUp
 
 
 
-			screenManager.AddScreen(TITLE_SCREEN, new TitleScreen(GraphicsDevice, inputManager, screenManager, displayManager, Content));
+			screenManager.AddScreen(TITLE_SCREEN, new TitleScreen(GraphicsDevice, inputManager, screenManager, displayManager, Content, Exit));
 			screenManager.SwitchScreen(TITLE_SCREEN);
 
 			screenManager.AddScreen(PLAYING_SCREEN, new PlayingScreen(GraphicsDevice, inputManager, Difficulty.Easy, Content));

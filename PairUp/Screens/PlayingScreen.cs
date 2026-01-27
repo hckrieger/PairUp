@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using Microsoft.Xna.Framework.Content;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
@@ -81,7 +82,7 @@ namespace PairUp.Screens
 
 		private InputManager inputManager;
 
-		private Button readyButton;
+		private TextButton readyButton;
 
 
 		private Color[] matchColors =
@@ -118,6 +119,8 @@ namespace PairUp.Screens
 		private BitmapFont scoreFont, status, levelDisplay, readyFont;
 
 		private ContentManager Content;
+
+		private SoundEffect matchSound;
 		public PlayingScreen(GraphicsDevice graphicsDevice, InputManager inputManager, Difficulty difficulty, ContentManager content)
 		{
 			this.graphicsDevice = graphicsDevice;
@@ -130,7 +133,7 @@ namespace PairUp.Screens
 		public override void Initialize()
 		{
 			base.Initialize();
-
+			matchSound = Content.Load<SoundEffect>("MatchSound");
 			scoreFont = new BitmapFont("Score:\n\n0", new Vector2(228, 10), Color.White);
 
 			status = new BitmapFont("Heads up", new Vector2(228, 64), Color.White);
@@ -139,11 +142,11 @@ namespace PairUp.Screens
 			levelDisplay = new BitmapFont($"Level: {(int)CurrentDifficulty + 1}/5", new Vector2(228,48), Color.White);
 
 
-			readyButton = new Button(
+			readyButton = new TextButton(
 				new BitmapFont($"Ready", Color.White, Alignment.Left), 
 				graphicsDevice, 
 				new Vector2(230, 112),
-				Color.Blue, 
+				Color.Gray, 
 				8);
 
 			readyButton.Visible = false;
@@ -355,7 +358,13 @@ namespace PairUp.Screens
 					flippedCount++;
 
 				if (flippedCount == CardGrid.GetLength(0) * CardGrid.GetLength(1))
+				{
+					if (currentGameState == GameState.Playing)
+						matchSound.Play();
+
 					currentGameState = GameState.GameEnded;
+				}
+					
 
 
 
@@ -370,6 +379,7 @@ namespace PairUp.Screens
 					status.Text = "You Win!\n\nPlay again?";
 				else
 					status.Text = "You passed\nthis stage!\n\nReady for\nthe next?";
+
 				
 
 				readyButton.ButtonPress(inputManager, () =>
@@ -380,7 +390,6 @@ namespace PairUp.Screens
 
 
 					tries = 0;
-					//fontManager.GetFont("score").Text = $"Tries: {tries}";
 					status.Visible = false;
 
 

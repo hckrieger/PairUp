@@ -1,3 +1,4 @@
 Source File,Dest File,Processor Type,Content Type,Source File Size,Dest File Size,Build Seconds
-"C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/cursor.png","C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/bin/DesktopGL/cursor.xnb","TextureProcessor","Texture2DContent",143,869,0.1474008
-"C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/letters.png","C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/bin/DesktopGL/letters.xnb","TextureProcessor","Texture2DContent",1267,25685,0.0048645
+"C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/cursor.png","C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/bin/DesktopGL/cursor.xnb","TextureProcessor","Texture2DContent",143,869,0.1485942
+"C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/letters.png","C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/bin/DesktopGL/letters.xnb","TextureProcessor","Texture2DContent",1267,25685,0.0048356
+"C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/MatchSound.wav","C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/bin/DesktopGL/MatchSound.xnb","SoundEffectProcessor","SoundEffectContent",163124,163045,0.5476919

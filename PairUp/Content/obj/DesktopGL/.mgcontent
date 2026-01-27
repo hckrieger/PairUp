@@ -6,8 +6,10 @@
   <SourceFiles>
     <File>C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/cursor.png</File>
     <File>C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/letters.png</File>
+    <File>C:/Users/hckri/source/repos/MonoGame/games/PairUp/PairUp/Content/MatchSound.wav</File>
   </SourceFiles>
   <DestFiles>
+    <File xsi:nil="true" />
     <File xsi:nil="true" />
     <File xsi:nil="true" />
   </DestFiles>
